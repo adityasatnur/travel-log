@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 module.exports = {
   env: {
     browser: true,
@@ -11,5 +12,6 @@ module.exports = {
     ecmaVersion: 11,
   },
   rules: {
+    'linebreak-style': ['error', process.env.NODE_ENV === 'prod' ? 'unix' : 'windows'],
   },
 };
